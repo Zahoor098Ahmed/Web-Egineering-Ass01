@@ -10,7 +10,7 @@ body {
   
   .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
   }
   
@@ -33,7 +33,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    overflow: hidden;
   }
   
   nav .logo {
@@ -250,8 +249,8 @@ body {
   
   .contact input,
   .contact textarea {
-    width: 100%;
-    padding: 1rem;
+    width: 95%;
+    padding: 0.8rem;
     border: 1px solid #444;
     border-radius: 5px;
     font-size: 1rem;
@@ -366,6 +365,7 @@ body {
     .contact input,
     .contact textarea {
       font-size: 0.9rem; /* Smaller font size for mobile */
+      width: 95%;
     }
   
     .contact .btn-primary {
@@ -413,6 +413,7 @@ body {
     .contact input,
     .contact textarea {
       font-size: 0.8rem; /* Smaller font size for very small devices */
+      width: 90%;
     }
   
     .contact .btn-primary {
