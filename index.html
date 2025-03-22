@@ -124,9 +124,17 @@
   <script>
     const mobileMenu = document.getElementById('mobile-menu');
     const navLinks = document.querySelector('.nav-links');
-
+    const body = document.body;
+  
     mobileMenu.addEventListener('click', () => {
       navLinks.classList.toggle('active');
+      body.classList.toggle('menu-open'); // Toggle overflow hidden
+    });
+  
+    // Close menu when a link is clicked (optional)
+    navLinks.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      body.classList.remove('menu-open');
     });
   </script>
 </body>
